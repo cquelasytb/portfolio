@@ -553,7 +553,7 @@
                 <!-- ===== CONTACT FORM START ===== -->
                 <form class="row" action="https://api.staticforms.xyz/submit" method="post">
                     <input type="hidden" name="accessKey" value="586fe0d2-0226-449d-94dc-b1753a65b400"> <!-- Required -->
-                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html"> <!-- Optional -->
+                    <input type="hidden" name="redirectTo" value="https://www.canva.com/design/DAFRqx1bpd0/7N8cgRbuLm_Jpe0dvI9stg/view"> <!-- Optional -->
                     <div class="contact-form padd-15">
                         <div class="row">
                             <div class="form-item col-6 padd-15">
@@ -652,5 +652,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
     <script src="js/style-switcher.js"></script>
+
+    <!-- ===== FIREBASE Config ===== -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-librarie              
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyC_yxCamyg2EmbLiRm0z800TRuTcf84Muc",
+            authDomain: "portfolio-andre-alves.firebaseapp.com",
+            projectId: "portfolio-andre-alves",
+            storageBucket: "portfolio-andre-alves.appspot.com",
+            messagingSenderId: "373143966128",
+            appId: "1:373143966128:web:4f28d1f49c1826ef7e0675",
+            measurementId: "G-QDSWXJBSS1"
+        }             
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app)
+    </script>
 </body>
 </html>
